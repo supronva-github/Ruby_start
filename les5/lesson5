@@ -4,7 +4,7 @@ year = gets.to_i
 print "Введите сумму накопления: "
 s = gets.to_i
 sum = 0
-1.upto(year) do |y|
+year.times do |y|
 	1.upto(12) do |m|
 		sum = sum + s 
 	 	puts "Год  #{y} месяц #{m},отложено: #{sum}"
