@@ -1,8 +1,12 @@
 !#/usr/bin/ruby
+print "Сколько лет будем хранить: "
+year = gets.to_i
 print "Введите сумму накопления: "
-sum= gets.to_i
-print "Введите кол-во месяцев: "
-n = gets.to_i
-1.upto(n) do |x|
-	 puts "Накопления за #{x} месяц: #{sum*x}"
+s = gets.to_i
+sum = 0
+1.upto(year) do |y|
+	1.upto(12) do |m|
+		sum = sum + s 
+	 	puts "Год  #{y} месяц #{m},отложено: #{sum}"
+	end
 end
