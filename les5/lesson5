@@ -1,0 +1,8 @@
+!#/usr/bin/ruby
+print "Введите сумму накопления: "
+sum= gets.to_i
+print "Введите кол-во месяцев: "
+n = gets.to_i
+1.upto(n) do |x|
+	 puts "Накопления за #{x} месяц: #{sum*x}"
+end
